@@ -25,9 +25,9 @@
             </div>
         </section>
         <section id="form"> <!-- Formulário que recebe os dados do usuário -->
-            <form action="#">
+            <form  name="formulario">
                 <label for="fname">Cardholder Name</label> <!-- Nome do Usuário -->
-                <input type="text" id="fname" placeholder="e.g. Jane Appleseed" autofocus>
+                <input type="text" id="fname" placeholder="e.g. Jane Appleseed" onfocus="recebe()">
                 <label for="number">Card Number</label> <!-- Numero do cartão -->
                 <input type="text" id="number" placeholder="e.g. 1234 5678 9123 0000">
                 <fieldset> <!-- Grupo que define o vencimento e o código de segurança-->
@@ -43,5 +43,7 @@
             </form>
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
