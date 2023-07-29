@@ -2,10 +2,6 @@
 
 :root {
     /* Colors*/
-    /* Primary*/
-    --linear-gradient-activeInput: linear-gradient(hsl(249, 99%, 64%) to hsl(278, 94%, 30%));
-    --erroInput:  hsl(0, 100%, 66%);
-
     /* Neutral */
     --White: hsl(0, 0%, 100%);
     --Light-grayish-violet: hsl(270, 3%, 87%);
@@ -106,69 +102,83 @@ main {
 }
 
 /* Formulário */
-#form {
+section#form {
     width: 350px;
-    height: auto;
-    margin: auto 0;
+    height: 450px;
     position: absolute;
-    right: 18%;
+    left: 60%;
+    /* border: 1px solid red; */
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+form{display: none;}
 
 label {
-    margin-bottom: 5px;
-    font-size: 0.6em;
+    margin-right: 40px;
+    font-size: 12px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--Very-dark-violet);
 }
 
-input {
+input{
     width: 350px;
-    height: 36px;
-    padding: 16px 12px;
-    margin-bottom: 20px;
-    border: 1px solid var(--Light-grayish-violet);
-    border-radius: 8px;
+    height: 35px;
+    padding: 2px 10px;
+    margin: 5px 0 20px 0;
     outline: none;
+    border: 1px solid var(--Light-grayish-violet);
+    border-radius: 6px;
+}
+
+input:active, input:focus {
+    cursor: pointer;
+    border: 1px solid;
+    border-color: hsl(249, 99%, 64%) hsl(278, 94%, 30%);
+}
+
+input::placeholder {
+    color: var(--Light-grayish-violet);
 }
 
 fieldset {
-    border: none
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    border: none;
 }
 
-#data{
-    margin-right: 48px;
-    display: inline;
-}
-
-fieldset#inputs {
-    width: 400px;
-}
-
-fieldset#inputs #date {
-    width: 68px;
-    margin-right: 4px;
-    display: inline;
-}
-
-fieldset#inputs #year {
-    width: 68px;
-    margin-right: 16px;
+#month, #year {
+    width: 70px;
 }
 
 #cvc {
-    width: 183px;
+    width: 180px;
+    margin-left: 10px;
 }
 
 input[type="submit"] {
-    height: 50px;
-    line-height: 2px;
-    cursor: pointer;
-    color: var(--White);
-    background-color: var(--Very-dark-violet); 
+    width: 350px;
+    height: 40px;
+    font-size: 14px;
+    color: var(--Light-grayish-violet);
+    background-color: var(--Very-dark-violet);
+}
+
+/* mensagem de agradecimento */
+div#thankYou {
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    border: 1px solid red;
+}
+
+div#thankYou p{
+    font-size: 30px;
+    margin: 50px;
+    text-transform: uppercase;
 }
