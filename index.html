@@ -8,49 +8,118 @@
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-    <main><!-- Corpo principal-->
-        <section id="cards"> <!-- Frente e Verso do Cartão -->
-            <div id="front">
+    <main>
+        <section id="left"><!-- Cartões e background-->
+            <div id="cards">
+                <div id="card_front">
+                    <img src="./images/card-logo.svg" alt="Logo" id="logo">
+                    <img src="./images/bg-card-front.png" alt="card front" id="front">
+                    <h1 id="front_number">0000 0000 0000 0000</h1>
+                    <div id="front_infos">
+                        <p id="front_name">Jane Applessed</p>
+                        <div id="front_data">
+                            <span id="front_month">00</span>
+                            <span>/</span>
+                            <span id="front_year">00</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="card_back">
+                    <img src="./images/bg-card-back.png" alt="card back" id="back">
+                    <span id="back_cvc">000</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="right"><!-- Formulário e Página de agradecimento-->
+            <div class="form">
+                <form>
+                    <div id="grid_container">
+                        <div id="grid_1">
+                            <div id="card_holder_name">
+                                <label for="inputName">Cardholder Name</label>
+                                <input 
+                                type="text"
+                                id="inputName"
+                                maxlength="16"
+                                minlength="10"
+                                placeholder="e.g. Jane Appleseed"
+                                required
+                                autocomplete="off"
+                                >
+                                <small class="erro">Wrong format, letters only</small>
+                            </div>
+                        </div>
+                        <div id="grid_2">
+                            <div id="card_number">
+                                <label for="inputNumber">Card Number</label>
+                                <input 
+                                type="text"
+                                id="inputNumber"
+                                maxlength="16"
+                                minlength="16"
+                                placeholder="e.g. 1234 5678 9123 0000"
+                                requerid
+                                autocomplete="off"
+                                >
+                                <small class="erro">Wrong format, Numbers only</small>
+                            </div>
+                        </div>
+                        <div id="grid_3">
+                            <label for="inputMonth">Exp. Date (mm/yy)</label>
+                            <div id="two_inputs">
+                                <div id="inputDate">
+                                    <input 
+                                    type="text"
+                                    id="inputMonth"
+                                    maxlength="2"
+                                    minlength="2"
+                                    placeholder="MM"
+                                    required
+                                    >
+                                    <input 
+                                    type="text"
+                                    id="inputYear"
+                                    maxlength="2"
+                                    minlength="2"
+                                    placeholder="YY"
+                                    required
+                                    >
+                                </div>
+                                <small class="erro">Can't be blank</small>
+                            </div>
+                        </div>
+                        <div id="grid_4">
+                            <div id="card_cvc">
+                                <label for="inputCVC">CVC</label>
+                                <input 
+                                type="text"
+                                id="inputCVC"
+                                maxlength="3"
+                                minlength="3"
+                                placeholder="e.g. 123"
+                                required
+                                >
+                                <small class="erro">Can't be blank</small>
+                            </div>
+                        </div>
+                        <div id="grid_5">
+                            <button type="submit" class="btn_submit">Confirm</button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="thank hidden">
                 <div>
-                    <img src="./images/card-logo.svg" alt="">
-                </div>
-                <div id="infos">
-                    <p>0000 0000 0000 0000</p>
-                    <span>JANE APPLESSED</span>
-                    <span>00/00</span>
+                    <img src="./images/icon-complete.svg" alt="Complete">
+                    <h1>Thank you!</h1>
+                    <p>We've added your cad details</p>
+                    <button type="submit" class="btn_submit">Continue</button>
                 </div>
             </div>
-            <div id="back">
-                <p>000</p>
-            </div>
         </section>
-        <section id="form"> <!-- Formulário que recebe os dados do usuário -->
-            <form  name="formulario">
-                <label for="cardHolderName">Cardholder Name</label> <!-- Nome do Usuário -->
-                <input type="text" id="cardHolderName" placeholder="e.g. Jane Appleseed">
-
-                <label for="cardNumer">Card Number</label> <!-- Numero do cartão -->
-                <input type="text" id="cardNumer" placeholder="e.g. 1234 5678 9123 0000">
-
-                <label for="month">Exp. Date (mm/yy)</label>
-                <label for="cvc">Cvc</label>
-                <fieldset>
-                    <input type="text" pattern="[01-12]{2}" maxlength="2" id="month" placeholder="MM">
-                    <input type="text" pattern="[01-99]{2}" maxlength="2" id="year" placeholder="YY">
-                    <input type="text" pattern="[000-999]{3}" maxlength="3" id="cvc" placeholder="e.g. 123">
-                </fieldset>
-
-                <input type="submit" value="Confirm">
-            </form>
-            <div id="thankYou">
-                <p>Thank You!</p>
-                <span>We've added your card details</span>
-                <input type="submit" value="Continue">
-            </div>
-        </section>
-
     </main>
-
     <script src="script.js"></script>
 </body>
 </html>
