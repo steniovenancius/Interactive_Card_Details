@@ -25,7 +25,6 @@ body {
     min-height: 100%;
     display: flex;
     align-items: center;
-    background-color: aquamarine;
 }
 
 main {
@@ -34,12 +33,9 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 50px;
-    background-color: burlywood;
 }
 
 section {
-    border: 1px solid red;
     width: 100vw;
     height: 100vh;
 }
@@ -49,7 +45,7 @@ section#left {
     padding: 10px;
     position: relative;
     background-image: url(./images/bg-main-desktop.png);
-    background-size: 70% 100%;
+    background-size: 65% 100%;
     background-repeat: no-repeat;
 }
 
@@ -112,12 +108,13 @@ section#left #cards {
 }
 
 #card_back {
+    width: 447px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: absolute;
     top: 280px;
-    left: 200px;
+    left: 210px;
 }   
 
 #card_back span {
@@ -127,13 +124,17 @@ section#left #cards {
     color: var(--Light-grayish-violet);
 }
 
+#card_front, #card_back {
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
 section#right {
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: aliceblue;
+    padding-left: 5%;
 }
 
 .form{
@@ -245,4 +246,8 @@ input::placeholder {
 
 .hidden {
     display: none;
+}
+
+section#left {
+    display: ;
 }
