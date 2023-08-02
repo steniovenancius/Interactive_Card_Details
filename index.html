@@ -32,7 +32,7 @@
         </section>
 
         <section id="right"><!-- Formulário e Página de agradecimento-->
-            <div class="form">
+            <div id="form">
                 <form>
                     <div id="grid_container">
                         <div id="grid_1">
@@ -43,6 +43,7 @@
                                 id="inputName"
                                 maxlength="16"
                                 minlength="10"
+                                pattern="[^0-9]+"
                                 placeholder="e.g. Jane Appleseed"
                                 required
                                 autocomplete="off"
@@ -59,7 +60,9 @@
                                 id="inputNumber"
                                 maxlength="16"
                                 minlength="16"
+                                pattern="[^a-zA-Z]{16}"
                                 placeholder="e.g. 1234 5678 9123 0000"
+                                onkeyup="cardNumber()"
                                 requerid
                                 autocomplete="off"
                                 >
@@ -111,7 +114,7 @@
                     
                 </form>
             </div>
-            <div class="thank hidden">
+            <div id="thank">
                 <div>
                     <img src="./images/icon-complete.svg" alt="Complete">
                     <h1>Thank you!</h1>

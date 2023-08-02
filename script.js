@@ -16,4 +16,9 @@ const inputCvc = document.getElementById('inputCVC').value;
 function cardHolder() {
     //recupera o que foi digitado no input e substitui no campo de nome
     frontCardName.innerHTML = inputName.value;
+
+}
+
+function cardNumber() {
+    frontCardNumber.innerHTML = inputNumber.value;
 }
