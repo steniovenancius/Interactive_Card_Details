@@ -43,13 +43,11 @@
                                 id="inputName"
                                 maxlength="16"
                                 minlength="10"
-                                pattern="[^0-9]+"
                                 placeholder="e.g. Jane Appleseed"
                                 required
                                 autocomplete="off"
-                                onkeyup="cardHolder()"
                                 >
-                                <small class="erro_card_name erro">Wrong format, letters only</small>
+                                <small id="erro_card_name">Wrong format, letters only</small>
                             </div>
                         </div>
                         <div id="grid_2">
@@ -60,13 +58,11 @@
                                 id="inputNumber"
                                 maxlength="16"
                                 minlength="16"
-                                pattern="[^a-zA-Z]{16}"
                                 placeholder="e.g. 1234 5678 9123 0000"
-                                onkeyup="cardNumber()"
                                 requerid
                                 autocomplete="off"
                                 >
-                                <small class="erro">Wrong format, Numbers only</small>
+                                <small id="erro_card_number">Wrong format, Numbers only</small>
                             </div>
                         </div>
                         <div id="grid_3">
@@ -74,37 +70,40 @@
                             <div id="two_inputs">
                                 <div id="inputDate">
                                     <input 
-                                    type="text"
+                                    type="number"
                                     id="inputMonth"
                                     maxlength="2"
                                     minlength="2"
+                                    oninput="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)"
                                     placeholder="MM"
                                     required
                                     >
                                     <input 
-                                    type="text"
+                                    type="number"
                                     id="inputYear"
                                     maxlength="2"
                                     minlength="2"
+                                    oninput="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)"
                                     placeholder="YY"
                                     required
                                     >
                                 </div>
-                                <small class="erro">Can't be blank</small>
+                                <small id="erro_card_data">Can't be blank</small>
                             </div>
                         </div>
                         <div id="grid_4">
                             <div id="card_cvc">
                                 <label for="inputCVC">CVC</label>
                                 <input 
-                                type="text"
+                                type="number"
                                 id="inputCVC"
                                 maxlength="3"
                                 minlength="3"
+                                oninput="if(this.value.length > this.maxLength) this.value=this.value.slice(0,this.maxLength)"
                                 placeholder="e.g. 123"
                                 required
                                 >
-                                <small class="erro">Can't be blank</small>
+                                <small id="erro_card_cvc">Can't be blank</small>
                             </div>
                         </div>
                         <div id="grid_5">
@@ -119,7 +118,7 @@
                     <img src="./images/icon-complete.svg" alt="Complete">
                     <h1>Thank you!</h1>
                     <p>We've added your cad details</p>
-                    <button type="submit" class="btn_submit">Continue</button>
+                    <button type="submit" class="btn_continue">Continue</button>
                 </div>
             </div>
         </section>
