@@ -7,11 +7,11 @@ Esta é uma solução para o [Formulário de Detalhes do Cartão Interativo](htt
 ## Índice
 
 - [Visão Geral](#visão-geral)
-    -[Captura de Tela](#captura-de-tela)
+    * [Captura de Tela](#captura-de-tela)
 - [Meu processo](#meu-processo)
-    -[Construído com](#construído-com)
-    -[O que aprendi](#o-que-aprendi)
-    -[Desenvolvimento Contínuo](#desenvolvimento-contínuo)
+    * [Construído com](#construído-com)
+    * [O que aprendi](#o-que-aprendi)
+    * [Desenvolvimento Contínuo](#desenvolvimento-contínuo)
 - [Autor](#autor)
 - [Agradecimentos](#agradecimentos)
 
@@ -34,7 +34,7 @@ Seus usuários devem ser capazes de:
 
 ### Links 
 * URL da solução: [Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw/hub).
-* URL do site: [Interactive Card Details Form]() 
+* URL do site: [Interactive Card Details Form](https://steniovenancius.github.io/Interactive_Card_Details/) 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -98,15 +98,16 @@ Sinta-se avontade para enviar seu feedback!
 
 # Frontend Mentor - Interactive Card Details Form
 This is a solution to the [Interactive Card Details Form](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw).
+
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Table of contents
 - [Overview](#Overview)
-    -[Screenshot](#screenshot)
+    * [Screenshot](#screenshot)
 - [My process](#my-process)
-    -[Built with](#built-with)
-    -[What I Learned](#What-I-Learned)
-    -[Continuous-Development](#Continuous-Development)
+    * [Built with](#built-with)
+    * [What I Learned](#What-I-Learned)
+    * [Continuous-Development](#Continuous-Development)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -129,7 +130,7 @@ Your users should be able to:
 
 ### Links 
 * Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw/hub).
-* Live Site URL: [Interactive Card Details Form]() 
+* Live Site URL: [Interactive Card Details Form](https://steniovenancius.github.io/Interactive_Card_Details/) 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
