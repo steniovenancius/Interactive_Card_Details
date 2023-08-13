@@ -32,6 +32,10 @@ Seus usuários devem ser capazes de:
 ![](./design/Solution.png)
 ![](./design/Erro.png)
 
+### Links 
+* URL da solução: [Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw/hub).
+* URL do site: [Interactive Card Details Form]() 
+
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Meu Processo 
@@ -122,6 +126,10 @@ Your users should be able to:
 ### Print Screen
 ![](./design/Solution.png)
 ![](./design/Erro.png)
+
+### Links 
+* Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw/hub).
+* Live Site URL: [Interactive Card Details Form]() 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
